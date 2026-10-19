@@ -1,0 +1,443 @@
+[
+  {
+    "term": "Attack surface",
+    "definition": "Every point where an attacker can interact with a system: inputs, APIs, credentials, network services.",
+    "tags": [
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Threat actor",
+    "definition": "A person or group with the intent and capability to attack a system.",
+    "tags": [
+      "threat"
+    ]
+  },
+  {
+    "term": "Threat model",
+    "definition": "A structured description of assets, trust boundaries and the threats that cross them.",
+    "tags": [
+      "threat"
+    ]
+  },
+  {
+    "term": "Vulnerability",
+    "definition": "A weakness that could be exploited to violate a security property.",
+    "tags": [
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Exploit",
+    "definition": "Concrete technique or code that takes advantage of a vulnerability.",
+    "tags": [
+      "offensive"
+    ]
+  },
+  {
+    "term": "Zero-day",
+    "definition": "A vulnerability with no vendor fix available at the time it is used or disclosed.",
+    "tags": [
+      "threat"
+    ]
+  },
+  {
+    "term": "CVE",
+    "definition": "A unique identifier assigned to a publicly disclosed vulnerability.",
+    "tags": [
+      "standards"
+    ]
+  },
+  {
+    "term": "CVSS",
+    "definition": "A scoring system that expresses the severity of a vulnerability.",
+    "tags": [
+      "standards"
+    ]
+  },
+  {
+    "term": "CWE",
+    "definition": "A taxonomy of software weakness types, such as SQL injection.",
+    "tags": [
+      "standards"
+    ]
+  },
+  {
+    "term": "MITRE ATT&CK",
+    "definition": "A knowledge base of adversary tactics and techniques observed in the wild.",
+    "tags": [
+      "threat"
+    ]
+  },
+  {
+    "term": "Defense in depth",
+    "definition": "Layering independent controls so a single failure does not compromise the system.",
+    "tags": [
+      "defense"
+    ]
+  },
+  {
+    "term": "Least privilege",
+    "definition": "Giving every identity only the permissions it needs for its task.",
+    "tags": [
+      "defense"
+    ]
+  },
+  {
+    "term": "Trust boundary",
+    "definition": "A line where data or control crosses between different privilege levels.",
+    "tags": [
+      "threat"
+    ]
+  },
+  {
+    "term": "Authentication",
+    "definition": "Proving an identity is who it claims to be.",
+    "tags": [
+      "identity"
+    ]
+  },
+  {
+    "term": "Authorization",
+    "definition": "Deciding what an authenticated identity may do.",
+    "tags": [
+      "identity"
+    ]
+  },
+  {
+    "term": "MFA",
+    "definition": "Authentication that requires two or more independent factors.",
+    "tags": [
+      "identity"
+    ]
+  },
+  {
+    "term": "Session fixation",
+    "definition": "An attack where the attacker forces a victim to use a known session identifier.",
+    "tags": [
+      "web"
+    ]
+  },
+  {
+    "term": "CSRF",
+    "definition": "Cross-site request forgery: a site causes a logged-in user's browser to perform an unwanted action.",
+    "tags": [
+      "web"
+    ]
+  },
+  {
+    "term": "XSS",
+    "definition": "Cross-site scripting: injecting script into pages viewed by other users.",
+    "tags": [
+      "web"
+    ]
+  },
+  {
+    "term": "SQL injection",
+    "definition": "Inserting SQL syntax through user input so the database executes unintended statements.",
+    "tags": [
+      "web"
+    ]
+  },
+  {
+    "term": "SSRF",
+    "definition": "Server-side request forgery: making the server request an attacker-chosen destination.",
+    "tags": [
+      "web"
+    ]
+  },
+  {
+    "term": "IDOR",
+    "definition": "Insecure direct object reference: reaching another user's object because authorization is missing.",
+    "tags": [
+      "web"
+    ]
+  },
+  {
+    "term": "Path traversal",
+    "definition": "Using ../ sequences to escape an intended directory.",
+    "tags": [
+      "web"
+    ]
+  },
+  {
+    "term": "Command injection",
+    "definition": "Passing untrusted input to a shell so it is executed as a command.",
+    "tags": [
+      "web"
+    ]
+  },
+  {
+    "term": "Deserialization",
+    "definition": "Converting untrusted bytes back into objects, which can execute code in unsafe formats.",
+    "tags": [
+      "appsec"
+    ]
+  },
+  {
+    "term": "CSP",
+    "definition": "Content Security Policy: a response header that restricts which resources a page may load.",
+    "tags": [
+      "web"
+    ]
+  },
+  {
+    "term": "HSTS",
+    "definition": "HTTP Strict Transport Security: tells browsers to use HTTPS only for a site.",
+    "tags": [
+      "web"
+    ]
+  },
+  {
+    "term": "TLS",
+    "definition": "Transport Layer Security: protocol that encrypts and authenticates network traffic.",
+    "tags": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Certificate pinning",
+    "definition": "Restricting which certificates a client will accept for a service.",
+    "tags": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Hashing",
+    "definition": "A one-way function that maps data to a fixed-size digest.",
+    "tags": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Salt",
+    "definition": "Random data added to a password before hashing so identical passwords produce different hashes.",
+    "tags": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Key derivation",
+    "definition": "A deliberately slow function that turns a password into a key or hash.",
+    "tags": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "HMAC",
+    "definition": "A keyed hash used to verify integrity and authenticity of a message.",
+    "tags": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Digital signature",
+    "definition": "A cryptographic proof that a message came from the holder of a private key.",
+    "tags": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Nonce",
+    "definition": "A value used once to prevent replay or reuse in cryptographic protocols.",
+    "tags": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Entropy",
+    "definition": "A measure of unpredictability, usually in bits, used to judge secret strength.",
+    "tags": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Security header",
+    "definition": "An HTTP response header that instructs the browser to enforce a protection.",
+    "tags": [
+      "web"
+    ]
+  },
+  {
+    "term": "WAF",
+    "definition": "Web application firewall: inspects and filters HTTP traffic against known attack patterns.",
+    "tags": [
+      "defense"
+    ]
+  },
+  {
+    "term": "SIEM",
+    "definition": "Security information and event management: aggregates logs and alerts on patterns.",
+    "tags": [
+      "defense"
+    ]
+  },
+  {
+    "term": "EDR",
+    "definition": "Endpoint detection and response: monitors endpoints for malicious behavior.",
+    "tags": [
+      "defense"
+    ]
+  },
+  {
+    "term": "IDS",
+    "definition": "Intrusion detection system: alerts on suspicious network or host activity.",
+    "tags": [
+      "defense"
+    ]
+  },
+  {
+    "term": "IPS",
+    "definition": "Intrusion prevention system: blocks traffic it classifies as malicious.",
+    "tags": [
+      "defense"
+    ]
+  },
+  {
+    "term": "Honeypot",
+    "definition": "A decoy system designed to attract and observe attackers.",
+    "tags": [
+      "defense"
+    ]
+  },
+  {
+    "term": "Phishing",
+    "definition": "Deception that tricks a person into revealing credentials or running malware.",
+    "tags": [
+      "social"
+    ]
+  },
+  {
+    "term": "Spear phishing",
+    "definition": "Phishing tailored to a specific person or team using researched details.",
+    "tags": [
+      "social"
+    ]
+  },
+  {
+    "term": "Social engineering",
+    "definition": "Manipulating people into breaking security procedures.",
+    "tags": [
+      "social"
+    ]
+  },
+  {
+    "term": "Incident response",
+    "definition": "The structured process for detecting, containing, eradicating and recovering from an incident.",
+    "tags": [
+      "defense"
+    ]
+  },
+  {
+    "term": "Forensics",
+    "definition": "Collecting and analyzing evidence from systems in a way that preserves integrity.",
+    "tags": [
+      "forensics"
+    ]
+  },
+  {
+    "term": "Chain of custody",
+    "definition": "Documentation of who handled evidence, when, and how it was protected.",
+    "tags": [
+      "forensics"
+    ]
+  },
+  {
+    "term": "IOC",
+    "definition": "Indicator of compromise: an observable artifact suggesting an intrusion.",
+    "tags": [
+      "threat"
+    ]
+  },
+  {
+    "term": "TTP",
+    "definition": "Tactics, techniques and procedures: how an adversary operates.",
+    "tags": [
+      "threat"
+    ]
+  },
+  {
+    "term": "OSINT",
+    "definition": "Intelligence gathered from public sources, used lawfully and ethically.",
+    "tags": [
+      "osint"
+    ]
+  },
+  {
+    "term": "Responsible disclosure",
+    "definition": "Reporting a vulnerability privately and coordinating publication with the vendor.",
+    "tags": [
+      "process"
+    ]
+  },
+  {
+    "term": "Bug bounty",
+    "definition": "A program that pays researchers for reporting vulnerabilities within scope.",
+    "tags": [
+      "process"
+    ]
+  },
+  {
+    "term": "Scope",
+    "definition": "The systems and techniques an engagement is authorized to touch.",
+    "tags": [
+      "process"
+    ]
+  },
+  {
+    "term": "Rules of engagement",
+    "definition": "The written agreement on targets, timing, techniques and escalation.",
+    "tags": [
+      "process"
+    ]
+  },
+  {
+    "term": "Hardening",
+    "definition": "Reducing the attack surface of a system through configuration and removal of unnecessary features.",
+    "tags": [
+      "defense"
+    ]
+  },
+  {
+    "term": "Patch management",
+    "definition": "The process of tracking and applying security updates.",
+    "tags": [
+      "defense"
+    ]
+  },
+  {
+    "term": "Air gap",
+    "definition": "Physically isolating a system from untrusted networks.",
+    "tags": [
+      "defense"
+    ]
+  },
+  {
+    "term": "Sandbox",
+    "definition": "An isolated environment that limits what code can access.",
+    "tags": [
+      "defense"
+    ]
+  },
+  {
+    "term": "Privilege escalation",
+    "definition": "Gaining rights beyond those initially granted.",
+    "tags": [
+      "offensive"
+    ]
+  },
+  {
+    "term": "Lateral movement",
+    "definition": "Moving from one compromised host to another inside a network.",
+    "tags": [
+      "offensive"
+    ]
+  },
+  {
+    "term": "Persistence",
+    "definition": "Mechanisms that keep an attacker's access across reboots and credential changes.",
+    "tags": [
+      "offensive"
+    ]
+  }
+]
